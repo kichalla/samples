@@ -1,0 +1,25 @@
+﻿{
+    "version": "1.0.0-*",
+    "description": "Hello",
+    "authors": [ "testautor" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+        "AppSupportingCoreClr": ""
+    },
+
+    "commands": {
+        "AppUsingXmlDCS": "AppUsingXmlDCS"
+    },
+
+    "frameworks": {
+        "dnxcore50": {
+            "dependencies": {
+                "System.Console": "4.0.0-beta-*",
+                "Microsoft.CSharp": "4.0.0-beta-*"
+            }
+        }
+    }
+}
