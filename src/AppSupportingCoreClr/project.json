@@ -10,6 +10,12 @@
     },
 
     "frameworks": {
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Runtime.Serialization": "4.0.0.0",
+                "System.Xml": "4.0.0.0"
+            }
+        },
         "dnxcore50": {
             "dependencies": {
                 "System.Console": "4.0.0-beta-*",
