@@ -6,6 +6,7 @@
 *.user
 *.sln.docstates
 *.lock.json
+*.wixproj
 
 # Build results
 [Dd]ebug/
