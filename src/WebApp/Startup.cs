@@ -1,17 +1,30 @@
 using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.Http;
+using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Microsoft.Framework.Logging;
-using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
+using Microsoft.Framework.Runtime;
 
 namespace SampleWebApp
 {
     public class Startup
     {
+        public Startup(IApplicationEnvironment env, IRuntimeEnvironment runtimeEnvironment)
+        {
+            var path = env.ApplicationBasePath;
+
+            var configBuilder = new ConfigurationBuilder(basePath: path)
+                                .AddJsonFile("config.json")
+                                .AddEnvironmentVariables();
+
+            Configuration = configBuilder.Build();
+        }
+
+        public IConfiguration Configuration { get; private set; }
+
         public void ConfigureServices(IServiceCollection services)
         {
+            services.Configure<AppSettings>(Configuration.GetConfigurationSection("AppSettings"));
+
             services.AddMvc();
         }
 
