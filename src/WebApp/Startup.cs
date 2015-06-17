@@ -14,6 +14,7 @@ namespace SampleWebApp
 
             var configBuilder = new ConfigurationBuilder(basePath: path)
                                 .AddJsonFile("config.json")
+                                .AddUserSecrets()
                                 .AddEnvironmentVariables();
 
             Configuration = configBuilder.Build();
