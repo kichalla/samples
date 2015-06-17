@@ -6,17 +6,12 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>4f5668bf-d27e-41fd-9315-3b713ffdb390</ProjectGuid>
+    <ProjectGuid>59b85e94-aab8-46d3-a997-e7536690ef88</ProjectGuid>
   </PropertyGroup>
+
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AssemblyName>AppUsingXmlDCS</AssemblyName>
-  </PropertyGroup>
-  <PropertyGroup Label="Configuration">
-    <RootNamespace>AppUsingXmlDCS</RootNamespace>
   </PropertyGroup>
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
