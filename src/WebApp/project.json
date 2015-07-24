@@ -18,5 +18,9 @@
         "dnxcore50": { }
     },
     "userSecretsId": "WebApp",
-    "webroot": "wwwroot"
+    "webroot": "wwwroot",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/kichalla/samples.git"
+    }
 }
